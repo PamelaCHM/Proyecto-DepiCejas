@@ -4,47 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de cabello</title>
-    <style>
-        body{
-            font-family: 'Times New Roman', Times, serif;
-            margin: 0; padding: 0;
-        }
-        header,nav, article{
-            padding: 20px; 
-        }
-        nav a{
-            text-align: center;
-            text-decoration: none;
-            margin: 0% 32px;
-        }
-        header{
-            text-align: center;
-            background-color: rgb(234, 207, 199);
-        }
-        #LogoDepi{
-            max-width: 150px;
-            border-radius: 55%;
-        }
-        .content-section{
-            padding: 30px;
-            margin: 10px;
-            border-radius: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/Estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
+<div class="todo">
     <header>
-        <aside style="float: left; padding-left: 10px;">
-            <div>
-                <img id="LogoDepi" src="Imagenes/Logo.jpg" alt="Logo de DepiCejas" width="150" height="150">
-            </div>
-        </aside>
+        <div id="LogoUbicacion">
+            <img id="LogoDepi" src="Imagenes/Logo.jpg" alt="Logo de DepiCejas" width="150" height="150">
+        </div>
 
-        <aside style="float:right; padding-left: 10px;">
-            <div>
-                <a href="https://www.instagram.com/depicejascr/?hl=es" target="_blank"> <img src="Imagenes/Logo Instagram.png" alt="Logo de Instagram" width="50" height="50"></a>
-            </div>
-        </aside>
+        <div id="LogoInstUbicacion">
+            <a href="https://www.instagram.com/depicejascr/?hl=es" target="_blank"> <i class="fa-brands fa-instagram iconInsta"></i></a>
+        </div>
         <h1>DepiCejas</h1>
         <nav>
             <a href="index.html">Nosotras</a>
@@ -59,16 +31,16 @@
     </header>
 
     <main>
-        <article style="display: flex; align-items: center;">
+        <article>
             <img src="Imagenes/balayage.jpeg" alt="Balayage" width="400" height=:auto;margin-right:20px;>
-            <div style="background-color: rgb(234, 207, 199); width: 400px; padding: 30px; margin: 20px auto; border-radius: 11px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; font-size: 40px;">
+            <div class="divcabello">
             <strong>Balayage</strong><br> 
                 Besada por el Sol luce un look natural y luminoso con nuestra técnica. 
                 En tonos miel, este estilo aporta calidez y elegancia, 
                 creando un efecto como si el sol hubiera acariciado tu cabello. 
                 
             </div>
-            <aside style="float:right; padding-left: 10px;">
+            <aside>
                 <div>
                     <video width="360" height="360" controls>
                         <source src="Videos/Balayagemiel.mp4">
@@ -79,18 +51,18 @@
             
         </article>
 
-        <article style="display: flex; align-items: center;">
+        <article>
             <img src="Imagenes/LisoOrganico.jpeg" alt="Liso Organico" width="400" height=:auto;margin-right:20px;>
-            <div style="background-color: rgb(234, 207, 199); width: 400px; padding: 30px; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; font-size: 40px;">
+            <div class="divcabello">
                  <strong>Liso Orgánico</strong>
                     Transforma tu cabello con nuestro alisado orgánico de Top Hair Top Liss, 
                     un tratamiento brasileño que ofrece un liso duradero, sin frizz y lleno de brillo.
                     Ideal para un look natural y manejable, cuidando tu cabello sin químicos agresivos.
                     ¡Luce un acabado suave y profesional!
             </div>
-            <aside style="float:right; padding-left: 10px;">
+            <aside>
                 <div>
-                    <video width="360" height="360" controls>
+                    <video width="360" height="460" controls>
                         <source src="Videos/LisoOrganico.mp4">
         
                     </video> 
@@ -99,31 +71,31 @@
 
         </article>
        
-        <article style="display: flex; align-items: center;">
+        <article>
             <img src="Imagenes/Colo2.jpeg" alt="Coloración" width="400" height=:auto;margin-right:20px;>
-            <div style="background-color: rgb(234, 207, 199); width: 400px; padding: 30px; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; font-size: 40px;">
+            <div class="divcabello">
                 <strong>Coloración Profesional</strong>
                 Dale vida a tu cabello con nuestros servicios de coloración profesional, 
                 utilizando pigmentos de alta calidad. Desde tonos vibrantes y audaces hasta acabados suaves y naturales, 
                 Nuestro enfoque garantiza un color duradero, brillante y saludable, adaptado a tu estilo y personalidad. 
             </div>
-            <aside style="float:right; padding-left: 10px;">
+            <aside>
                 <div>
                     <img src="Imagenes/Color3.jpeg" alt="Cejas" width="400" height=:auto;margin-right:20px;>
                 </div>
             </aside>
         </article>
 
-        <article style="display: flex; align-items: center;">
+        <article>
             <img src="Imagenes/Corte.jpeg" alt="Butterfly Haircut" width="400" height=:auto;margin-right:20px;>
-            <div style="background-color: rgb(234, 207, 199); width: 400px; padding: 30px; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; font-size: 40px;">
+            <div class="divcabello">
                 <strong>Butterfly Haircut</strong><br>
                     Luce un estilo fresco y en tendencia con el butterfly haircut.
                     Este corte en capas crea volumen y movimiento, con capas cortas alrededor del rostro y largas en la parte inferior,
                     brindando un look versátil y ligero sin perder el largo. Ideal para dar cuerpo y textura a cabellos medianos a largos.
                     
             </div>
-            <aside style="float:right; padding-left: 10px;">
+            <aside">
                 <div>
                     <video width="360" height="360" controls>
                         <source src="Videos/Corte.mp4">
@@ -133,9 +105,9 @@
             </aside>
         </article>
 
-        <article style="display: flex; align-items: center;">
+        <article>
             <img src="Imagenes/Rizos.jpeg" alt="Rizos" width="400" height=:auto;margin-right:20px;>
-            <div style="background-color: rgb(234, 207, 199); width: 400px; padding: 30px; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; font-size: 40px;">
+            <div class="divcabello">
                 <strong>Amor por los Rizos</strong><br>
                 En Depicejas, amamos las cabelleras rizadas y creemos que amar tus rizos es amarte a ti misma. 
                 Celebramos la belleza de los cabellos ondulados, rizados y afros, 
@@ -143,7 +115,7 @@
                 
                     
             </div>
-            <aside style="float:right; padding-left: 10px;">
+            <aside>
                 <div>
                     <video width="360" height="360" controls>
                         <source src="Videos/Rizos.mp4">
@@ -153,12 +125,7 @@
             </aside>
         </article>
 
-
-
-
-
     </main>
-
-    
+</div>
 </body>
 </html>

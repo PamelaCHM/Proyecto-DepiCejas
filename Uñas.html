@@ -4,48 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de uñas</title>
-    <style>
-        body{
-            font-family: 'Times New Roman', Times, serif;
-            margin: 0; padding: 0;
-        }
-        header,nav, article{
-            padding: 20px; 
-        }
-        nav a{
-            text-align: center;
-            text-decoration: none;
-            margin: 0% 32px;
-        }
-        header{
-            text-align: center;
-            background-color: rgb(234, 207, 199);
-        }
-        #LogoDepi{
-            max-width: 150px;
-            border-radius: 55%;
-        }
-        .content-section{
-            padding: 30px;
-            margin: 10px;
-            border-radius: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/Estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-
+    <div class="todo"> 
     <header>
-        <aside style="float: left; padding-left: 10px;">
-            <div>
+            <div id="LogoUbicacion">
                 <img id="LogoDepi" src="Imagenes/Logo.jpg" alt="Logo de DepiCejas" width="150" height="150">
             </div>
-        </aside>
 
-        <aside style="float:right; padding-left: 10px;">
-            <div>
-                <a href="https://www.instagram.com/depicejascr/?hl=es" target="_blank"> <img src="Imagenes/Logo Instagram.png" alt="Logo de Instagram" width="50" height="50"></a>
+            <div id="LogoInstUbicacion">
+                <a href="https://www.instagram.com/depicejascr/?hl=es" target="_blank"> <i class="fa-brands fa-instagram iconInsta"></i></a>
             </div>
-        </aside>
         <h1>DepiCejas</h1>
         <nav>
             <a href="index.html">Nosotras</a>
@@ -59,11 +30,10 @@
         </nav>
     </header>
 
-    <main>
-       
-        <article style="display: flex; align-items: center;">
+    <main>   
+        <article>
             <img src="Imagenes/uñas.png.jpg" alt="uñas" width="400" height=:auto;margin-right:20px;>
-            <div style="background-color: rgb(234, 207, 199); width: 400px; padding: 30px; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; font-size: 25px;">
+            <div class="divUñas">
                 Arte en Uñas
                 Transforma tus uñas en verdaderas obras de arte 
                 con nuestro servicio de diseño de uñas profesional. 
@@ -76,14 +46,14 @@
                   ¡La creatividad y profesionalismo en cada detalle nos distingue!
                 
             </div>
-            <aside style="float:right; padding-left: 10px;">
+            <aside>
                 <div>
                     <img src="Imagenes/uñas03.jpg" width="400"  height=:auto;margin-right:20px;> 
                 </div>
             </aside>
         </article>
-       
     </main>
 
+</div>
 </body>
 </html>
