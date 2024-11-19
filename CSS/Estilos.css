@@ -257,17 +257,6 @@ main {
 
 }
 
-.imagenUnias{
-    width: 400px;
-    height: auto;
-    flex-shrink: 0;
-    border-radius: 8px;
-    margin-left: 10px; /* Espaciado entre la imagen y el texto */
-    margin-right: 10px;
-    align-items: left;
-
-}
-
 .imagenUnias2{
     width: 400px;
     height: auto;
@@ -289,6 +278,15 @@ main {
     font-size: 23px;
     width: 600px;
    
+}
+
+.videoUñas{
+    width: 350px;
+    height: 600px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    margin-right: 60px; /* Espaciado entre la imagen y el texto */
+
 }
 
 
