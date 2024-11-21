@@ -7,7 +7,6 @@ body {
     min-height: 100vh;
     background-color: #fefefe;
 }
-
 .flex-container {
     display: flex;
     align-items: center;
@@ -15,6 +14,12 @@ body {
     gap: 20px;
     margin: 10px auto;
     max-width: 1200px; /* Mantener un ancho máximo */
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.flex-container:hover{
+    transform: translateY(-3px); /* Efecto flotante */
+    box-shadow: 0px 12px 30px rgba(173, 132, 184, 1);
 }
 
 .todo {
@@ -46,42 +51,90 @@ header {
    
 }
 
-#LogoDepi {
-    max-width: 150px;
-    height: auto;
-    border-radius: 55%;
-    float: right;
-}
+
 
 h1 {
     margin: 0;
     text-align: center;
     flex-grow: 1; /* Ocupa espacio en el centro */
+
+}#LogoDepi {
+    max-width: 150px;
+    height: auto;
+    border-radius: 55%;
+    float: right;
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+#LogoDepi:hover{
+    transform: translateY(-3px); /* Efecto flotante */
+    box-shadow: 0px 12px 30px rgba(173, 132, 184, 1);
 }
 
 .iconInsta {
     font-size: 70px;
     color: black;
+    transition: transform 0.2s; 
 }
 
+
+
+.iconInsta:hover{
+    transform: translateY(-3px); /* Efecto flotante */
+}
 
 /******menus***********/
+/* Estilo del cuadro de fondo del menú */
+/* Estilo del contenedor del menú */
 nav {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
-    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 0;
+    margin: 20px;
 }
 
+/* Estilo de los enlaces del menú */
 nav a {
+    display: flex;
+    justify-content: center; /* Centra el texto */
+    align-items: center;
+    width: 120px; /* Tamaño del cuadro */
+    height: 97px;
+    border-radius: 7px;
+    
+    color: #140101; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    text-decoration: none; /* Elimina el subrayado */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
     text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-    color: #4c3c85;
-    font-weight: bold;
 }
+
+/* Efecto hover */
+nav a:hover {
+    transform: scale(1.2); /* Agranda el botón */
+    background: #d6d6cc; /* Cambia el color de fondo */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Coloca el elemento encima de otros */
+}
+
+/* Oscurece los demás elementos cuando uno está seleccionado */
+nav a:not(:hover) {
+    filter: brightness(0.7); /* Reduce el brillo */
+    transform: scale(0.9); /* Reduce el tamaño */
+    opacity: 0.6; /* Añade transparencia */
+}
+
+
+
+
+
+
+
 
 /* Main styles */
 main {
