@@ -32,18 +32,19 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    
     background-color: rgb(234, 207, 199);
     padding: 20px;
     position: relative;
-    text-align: center;
+   
+    
 }
 
 .caja1 {  
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribuye logo, título e ícono */
-   
+    justify-content: space-between; /* Distribuye logo, título e ícono */ 
     background-color: rgb(234, 207, 199);
     width: 100%;
     max-width: 1200px; /* Limita el ancho del header */
@@ -57,8 +58,13 @@ h1 {
     margin: 0;
     text-align: center;
     flex-grow: 1; /* Ocupa espacio en el centro */
-
-}#LogoDepi {
+    font-style: italic;
+    font-size: 80px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra al texto */
+}
+#LogoDepi {
     max-width: 150px;
     height: auto;
     border-radius: 55%;
@@ -88,11 +94,11 @@ h1 {
 /* Estilo del contenedor del menú */
 nav {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Centra los elementos verticalmente */
     padding: 0;
-    margin: 20px;
+    margin: 10px;
 }
 
 /* Estilo de los enlaces del menú */
@@ -100,25 +106,27 @@ nav a {
     display: flex;
     justify-content: center; /* Centra el texto */
     align-items: center;
-    width: 120px; /* Tamaño del cuadro */
-    height: 97px;
-    border-radius: 7px;
-    
+    width: 130px; /* Tamaño del cuadro */
+    height: 90px;
+    border-radius: 30px;
     color: #140101; /* Color del texto */
-    font-size: 18px; /* Tamaño del texto */
+    font-size: 20px; /* Tamaño del texto */
     font-weight: bold; /* Negrita */
     text-decoration: none; /* Elimina el subrayado */
     cursor: pointer;
     transition: all 0.3s ease; /* Transición suave */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
     text-align: center;
+    transform: translateY(-3px); /* Efecto flotante */
+    /*box-shadow: 0px 12px 30px #ca8d8d ;*/
+   
 }
 
 /* Efecto hover */
 nav a:hover {
     transform: scale(1.2); /* Agranda el botón */
-    background: #d6d6cc; /* Cambia el color de fondo */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    background: #eccdd6; /* Cambia el color de fondo */
+    box-shadow: 0 6px 10px white;
     z-index: 1; /* Coloca el elemento encima de otros */
 }
 
