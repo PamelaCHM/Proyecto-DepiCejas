@@ -204,6 +204,7 @@ main {
     margin: 10px auto;
     max-width: 1200px; 
     transition: transform 0.2s, box-shadow 0.2s; 
+    overflow: hidden;
 }
 
 .flex-container:hover{
@@ -230,7 +231,6 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 40px;
     width: 400px;
-
 }
 
 .imagenCejas{
@@ -239,6 +239,25 @@ main {
     flex-shrink: 0;
     border-radius: 8px;
     margin-right: 80px; /* Espaciado entre la imagen y el texto */
+}
+
+.imagenCejas2{
+    width: 380px;
+    height: 550px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    display: flex;
+    animation: desplazamiento-continuo 20s linear infinite;
+}
+
+/*animacion para imagenes cejas adicionales*/
+@keyframes desplazamiento-continuo {
+    0% {
+        transform: translateX(0); /* Posición inicial */
+    }
+    100% {
+        transform: translateX(calc(-100% * 5)); /* Mover todas las imágenes hacia la izquierda */
+    }
 }
 
 .divDepilacion{
@@ -289,7 +308,6 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 35px;
     width: 400px;
-
 }
 
 .imagenMicropigmentacion{
