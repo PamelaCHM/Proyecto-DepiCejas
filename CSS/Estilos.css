@@ -288,7 +288,6 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 35px;
     width: 600px;
-
 }
 
 .imagenPestañas{
@@ -297,6 +296,25 @@ main {
     flex-shrink: 0;
     border-radius: 8px;
     margin-right: 55px; /* Espaciado entre la imagen y el texto */
+}
+
+.imagenPestañas2{
+    width: 380px;
+    height: 550px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    display: flex;
+    animation: desplazamiento-continuo-pestanias 40s linear infinite;
+}
+
+/*animacion para imagenes pestanias adicionales*/
+@keyframes desplazamiento-continuo-pestanias {
+    0% {
+        transform: translateX(0); /* Posición inicial */
+    }
+    100% {
+        transform: translateX(calc(-100% * 5)); /* Mover todas las imágenes hacia la izquierda */
+    }
 }
 
 .divMicropigmentacion{
@@ -318,6 +336,25 @@ main {
     margin-right: 80px; /* Espaciado entre la imagen y el texto */
 }
 
+.imagenMicropigmentacion2{
+    width: 380px;
+    height: 550px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    display: flex;
+    animation: desplazamiento-continuo-micro 50s linear infinite;
+}
+
+/*animacion para imagenes micropigmentacion adicionales*/
+@keyframes desplazamiento-continuo-micro {
+    0% {
+        transform: translateX(0); /* Posición inicial */
+    }
+    100% {
+        transform: translateX(calc(-100% * 5)); /* Mover todas las imágenes hacia la izquierda */
+    }
+}
+
 .divMaquillaje{
     background-color: rgb(234, 207, 199);
     flex: 1;
@@ -335,6 +372,15 @@ main {
     flex-shrink: 0;
     border-radius: 8px;
     margin-right: 80px; 
+}
+
+.imagenMaquillaje2{
+    width: 380px;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    display: flex;
+    animation: desplazamiento-continuo 20s linear infinite;
 }
 
 .divcabello{
@@ -361,8 +407,8 @@ main {
     height: 450px;
     flex-shrink: 0;
     border-radius: 8px;
-    margin-right: 80px; /* Espaciado entre la imagen y el texto */
-
+    margin-right: 40px; /* Espaciado entre la imagen y el texto */
+    animation: desplazamiento-continuo-pestanias 40s linear infinite;
 }
 
 .divUñas{
@@ -392,6 +438,15 @@ main {
     flex-shrink: 0;
     border-radius: 8px;
     margin-right: 60px; 
+}
+
+.imagenUnias3{
+    width: 350px;
+    height: 490px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    margin-right: 40px; 
+    animation: desplazamiento-continuo-pestanias 40s linear infinite;
 }
 
 /************************Footer style******************************/
