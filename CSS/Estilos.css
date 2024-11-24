@@ -14,7 +14,6 @@ body {
     flex: 1;
 }
 
-
 /************************Header******************************/
 header {
     display: flex;
@@ -29,6 +28,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    flex-wrap: wrap;
     background-color: rgb(234, 207, 199);
     width: 100%;
     max-width: 1200px; 
@@ -75,6 +75,7 @@ nav {
     gap: 10px;
     justify-content: center; 
     align-items: center; 
+    flex-wrap: wrap;
     padding: 0;
     margin: 10px;
 }
@@ -125,6 +126,7 @@ main {
     display: flex;
     justify-content: center; /* Alinea las imágenes al centro de la fila */
     gap: 0px; /* Elimina el espacio entre las imágenes */
+    flex-wrap: wrap;
     width: 100%; /* Ocupa todo el ancho disponible */
     margin: 0 auto; /* Centra el contenedor en la página */
     overflow: hidden; /* Evita desbordamientos */
@@ -250,16 +252,6 @@ main {
     animation: desplazamiento-continuo 20s linear infinite;
 }
 
-/*animacion para imagenes cejas adicionales*/
-@keyframes desplazamiento-continuo {
-    0% {
-        transform: translateX(0); /* Posición inicial */
-    }
-    100% {
-        transform: translateX(calc(-100% * 5)); /* Mover todas las imágenes hacia la izquierda */
-    }
-}
-
 .divDepilacion{
     background-color: rgb(234, 207, 199);
     flex: 1;
@@ -304,17 +296,7 @@ main {
     flex-shrink: 0;
     border-radius: 8px;
     display: flex;
-    animation: desplazamiento-continuo-pestanias 40s linear infinite;
-}
-
-/*animacion para imagenes pestanias adicionales*/
-@keyframes desplazamiento-continuo-pestanias {
-    0% {
-        transform: translateX(0); /* Posición inicial */
-    }
-    100% {
-        transform: translateX(calc(-100% * 5)); /* Mover todas las imágenes hacia la izquierda */
-    }
+    animation: desplazamiento-continuo 40s linear infinite;
 }
 
 .divMicropigmentacion{
@@ -342,17 +324,7 @@ main {
     flex-shrink: 0;
     border-radius: 8px;
     display: flex;
-    animation: desplazamiento-continuo-micro 50s linear infinite;
-}
-
-/*animacion para imagenes micropigmentacion adicionales*/
-@keyframes desplazamiento-continuo-micro {
-    0% {
-        transform: translateX(0); /* Posición inicial */
-    }
-    100% {
-        transform: translateX(calc(-100% * 5)); /* Mover todas las imágenes hacia la izquierda */
-    }
+    animation: desplazamiento-continuo 50s linear infinite;
 }
 
 .divMaquillaje{
@@ -408,7 +380,7 @@ main {
     flex-shrink: 0;
     border-radius: 8px;
     margin-right: 40px; /* Espaciado entre la imagen y el texto */
-    animation: desplazamiento-continuo-pestanias 40s linear infinite;
+    animation: desplazamiento-continuo 40s linear infinite;
 }
 
 .divUñas{
@@ -446,9 +418,18 @@ main {
     flex-shrink: 0;
     border-radius: 8px;
     margin-right: 40px; 
-    animation: desplazamiento-continuo-pestanias 40s linear infinite;
+    animation: desplazamiento-continuo 40s linear infinite;
 }
 
+/*animacion para imagenes adicionales*/
+@keyframes desplazamiento-continuo {
+    0% {
+        transform: translateX(0); /* Posición inicial */
+    }
+    100% {
+        transform: translateX(calc(-100% * 5)); /* Mover todas las imágenes hacia la izquierda */
+    }
+}
 /************************Footer style******************************/
 footer {
     text-align: center;
@@ -457,6 +438,15 @@ footer {
     font-size: 14px;
 }
 
+/*Animacion para que las imagenes adicionales en difrente tamanio de pantalla se muevean en diferente eje (el Y)*/
+@keyframes desplazamiento-continuo-EjeY {
+    0% {
+        transform: translateY(0); /* Posición inicial */
+    }
+    100% {
+        transform: translateY(calc(-100% * 5)); /* Mover todas las imágenes hacia arriba */
+    }
+}
 /************************Responsive styles******************************/
 @media (max-width: 768px) {
     .flex-container {
@@ -475,6 +465,30 @@ footer {
     nav a {
         font-size: 14px;
     }
+
+    .imagenCejas2{
+        animation: desplazamiento-continuo-EjeY 20s linear infinite;
+    }
+
+    .imagenPestañas2{
+        animation: desplazamiento-continuo-EjeY 40s linear infinite;
+    }
+
+    .imagenMicropigmentacion2{
+        animation: desplazamiento-continuo-EjeY 50s linear infinite;
+    }
+
+    .imagenMaquillaje2{
+        animation: desplazamiento-continuo-EjeY 20s linear infinite;
+    }
+
+    .videoCabello{
+        animation: desplazamiento-continuo-EjeY 40s linear infinite;
+    }
+
+    .imagenUnias3{
+        animation: desplazamiento-continuo-EjeY 20s linear infinite;
+    }
 }
 
 @media (max-width: 480px) {
@@ -488,5 +502,29 @@ footer {
 
     .divNosotras {
         font-size: 16px;
+    }
+
+    .imagenCejas2{
+        animation: desplazamiento-continuo-EjeY 20s linear infinite;
+    }
+
+    .imagenPestañas2{
+        animation: desplazamiento-continuo-EjeY 40s linear infinite;
+    }
+
+    .imagenMicropigmentacion2{
+        animation: desplazamiento-continuo-EjeY 50s linear infinite;
+    }
+
+    .imagenMaquillaje2{
+        animation: desplazamiento-continuo-EjeY 20s linear infinite;
+    }
+
+    .videoCabello{
+        animation: desplazamiento-continuo-EjeY 40s linear infinite;
+    }
+
+    .imagenUnias3{
+        animation: desplazamiento-continuo-EjeY 20s linear infinite;
     }
 }
