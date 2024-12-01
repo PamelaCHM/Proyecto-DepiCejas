@@ -448,10 +448,12 @@ footer {
     }
 }
 /************************Responsive styles******************************/
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .flex-container {
         flex-direction: column; /* Apila los elementos */
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .imagenIndex {
@@ -460,6 +462,123 @@ footer {
 
     h1 {
         font-size: 1.8rem;
+    }
+
+    #LogoDepi{
+        width: 120px;
+    }
+
+    .iconInsta{
+        font-size: 60px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .divNosotras {
+        font-size: 18px;
+    }
+
+    .divCejas{
+        font-size: 18px;
+    }
+    
+    .imagenCejas{
+        width: 200px;
+        height: auto;
+    }
+    
+    .imagenCejas2{
+        width: 280px;
+        height: 550px;
+    }
+    
+    .divDepilacion{
+        font-size: 18px;
+        width: 400px;
+    }
+    
+    .videoDepilacion{
+        width: 250px;
+        height: auto;
+    }
+    
+    .divPestañas{
+        font-size: 18px;
+        width: 400px;
+    }
+    
+    .imagenPestañas{
+        width: 250px;
+        height: auto;
+    }
+    
+    .imagenPestañas2{
+        width: 280px;
+        height: 550px;
+    }
+    
+    .divMicropigmentacion{
+        font-size: 18px;
+    }
+    
+    .imagenMicropigmentacion{
+        width: 250px;
+        height: auto;
+    }
+    
+    .imagenMicropigmentacion2{
+        width: 280px;
+        height: 450px;
+    }
+    
+    .divMaquillaje{
+        font-size: 18px;
+    }
+    
+    .imagenMaquillaje{
+        width: 250px;
+        height: auto;
+    }
+    
+    .imagenMaquillaje2{
+        width: 280px;
+        height: 400px;
+    }
+    
+    .divcabello{
+        font-size: 18px;
+    }
+    
+    .imagenCabello{
+        width: 250px;
+        height: auto;
+    }
+    
+    .videoCabello{
+        width: 250px;
+        height: 350px;
+    }
+    
+    .divUñas{
+        font-size: 18px;
+        width: 400px;
+    }
+    
+    .imagenUnias2{
+        width: 200px;
+        height: auto;
+    }
+    
+    .videoUñas{
+        width: 250px;
+        height: 500px;
+    }
+    
+    .imagenUnias3{
+        width: 250px;
+        height: 390px;
     }
 
     nav a {
@@ -496,12 +615,125 @@ footer {
         font-size: 1.5rem;
     }
 
+    #LogoDepi{
+        width: 102px;
+    }
+
+    .iconInsta{
+        font-size: 55px;
+    }
+
     nav a {
         font-size: 12px;
     }
 
     .divNosotras {
-        font-size: 16px;
+        font-size: 18px;
+    }
+
+    .divCejas{
+        font-size: 18px;
+        width: 250px;
+    }
+    
+    .imagenCejas{
+        width: 200px;
+        height: auto;
+    }
+    
+    .imagenCejas2{
+        width: 280px;
+        height: 550px;
+    }
+    
+    .divDepilacion{
+        font-size: 18px;
+        width: 250px;
+    }
+    
+    .videoDepilacion{
+        width: 250px;
+        height: auto;
+    }
+    
+    .divPestañas{
+        font-size: 18px;
+        width: 250px;
+    }
+    
+    .imagenPestañas{
+        width: 280px;
+        height: auto;
+    }
+    
+    .imagenPestañas2{
+        width: 280px;
+        height: 550px;
+    }
+    
+    .divMicropigmentacion{
+        font-size: 18px;
+        width: 250px;
+    }
+    
+    .imagenMicropigmentacion{
+        width: 250px;
+        height: auto;
+    }
+    
+    .imagenMicropigmentacion2{
+        width: 280px;
+        height: 450px;
+    }
+    
+    .divMaquillaje{
+        font-size: 18px;
+        width: 250px;
+    }
+    
+    .imagenMaquillaje{
+        width: 250px;
+        height: auto;
+    }
+    
+    .imagenMaquillaje2{
+        width: 280px;
+        height: 400px;
+    }
+    
+    .divcabello{
+        font-size: 18px;
+        width: 250px;
+    }
+    
+    .imagenCabello{
+        width: 250px;
+        height: auto;
+    }
+    
+    .videoCabello{
+        width: 250px;
+        height: 350px;
+    }
+    
+    .divUñas{
+        font-size: 18px;
+        width: 280px;
+    }
+    
+    .imagenUnias2{
+        width: 200px;
+        height: auto;
+    }
+    
+    .videoUñas{
+        width: 250px;
+        height: 500px;
+    }
+    
+    .imagenUnias3{
+        width: 250px;
+        height: 390px;
     }
 
     .imagenCejas2{
