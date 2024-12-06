@@ -20,7 +20,7 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     background-color: rgb(234, 207, 199);
-    padding: 20px;
+    padding: 0px;
     position: relative;
 }
 
@@ -32,7 +32,7 @@ header {
     background-color: rgb(234, 207, 199);
     width: 100%;
     max-width: 1200px; 
-    margin: 0 auto; /*Centrar los elementos*/
+    margin: 10px auto; /*Centrar los elementos*/
 }
 
 #LogoDepi {
@@ -48,7 +48,8 @@ header {
     box-shadow: 0px 12px 30px rgba(173, 132, 184, 1);
 }
 
-h1 { 
+/* Estilo del H1 con clase específica */
+.caja1 h1 {
     text-align: center;
     flex-grow: 1; /* Ocupa espacio en el centro */
     font-style: italic;
@@ -68,51 +69,110 @@ h1 {
 .iconInsta:hover{
     transform: translateY(-3px); /* Efecto flotante */
 }
-
-/*Barra de navegacion (Nav)*/
-nav {
-    display: flex;
-    gap: 10px;
-    justify-content: center; 
-    align-items: center; 
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 10px;
-}
-
-nav a {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    width: 130px; /* Tamaño de los cuadritos del nav */
-    height: 90px;
-    border-radius: 30px;
-    color: #140101;
-    font-size: 20px; 
-    font-weight: bold; /* Negrita */
-    text-decoration: none; /* Elimina el subrayado */
-    cursor: pointer;
-    transition: all 0.3s ease; /* Transición suave */
+/*************************************************************************************/
+/* Estilo de los enlaces de navegación (pantallas grandes y menú expandido) */
+.navbar .nav-link {
+    display: inline-block; /* Asegura que los enlaces estén en línea */
+    margin: 0 20px; /* Espaciado horizontal entre los enlaces */
+    padding: 10px 15px; /* Espaciado interno */
     text-align: center;
-    transform: translateY(-3px); /* Efecto flotante */
+    text-decoration: none;
+    font-size: 20px;
+    color: #140101;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    
 }
 
-nav a.pagAct{/*Para que cuando se este en una pagna, el color sea difernte en el nav y mejorar la ubicacion del usuario*/
-    color: #9c0000;
+/* Hover para los enlaces */
+.navbar .nav-link:hover {
+    background: #eccdd6; /* Color de fondo al pasar el ratón */
+    transform: scale(1.2); /* Agranda ligeramente el enlace */
+    box-shadow: 0 6px 10px white; /* Agrega sombra blanca */
+    z-index: 1; /* Asegura que el hover esté por encima */
 }
 
-nav a:hover {
-    transform: scale(1.2); /* Agranda el botón */
-    background: #eccdd6;
-    box-shadow: 0 6px 10px white;
-    z-index: 1; 
-}
-
-nav a:not(:hover) {
+/* Efecto para los enlaces no seleccionados (estado normal) */
+.navbar .nav-link:not(:hover) {
     filter: brightness(0.7); /* Reduce el brillo */
-    transform: scale(0.9); /* Reduce el tamaño */
-    opacity: 0.6; /* Añade transparencia */
+    transform: scale(0.9); /* Reduce el tamaño ligeramente */
+    opacity: 0.6; /* Añade un poco de transparencia */
 }
+
+/* Estilo para el enlace activo */
+.navbar .nav-link.pagAct {
+    color: #9c0000; /* Color específico para el enlace activo */
+    transform: none; /* Sin transformaciones adicionales */
+    opacity: 1; /* Totalmente opaco */
+    filter: none; /* Sin cambios en el brillo */
+}
+
+.navbar {
+    background-color: rgb(234, 207, 199) !important; /* Fondo personalizado */
+}
+
+/* Diseño general de la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Distribuye los enlaces uniformemente */
+    flex-wrap: nowrap; /* Mantiene los enlaces en una fila */
+    gap: 10px; /* Espaciado uniforme entre los enlaces */
+    background-color: #f5d8e1;
+}
+
+/* Estilo para el menú colapsable (pantallas pequeñas) */
+.collapse .nav-link {
+    margin: 10px 0; /* Espaciado vertical entre los enlaces */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    text-align: center; /* Centra el texto en cada enlace */
+    color: #140101; /* Color de texto predeterminado */
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover para el menú colapsable */
+.collapse .nav-link:hover {
+    background: #eccdd6; /* Mismo color de fondo que en pantallas grandes */
+    transform: scale(1.0); /* Agranda ligeramente el enlace */
+    box-shadow: 0 6px 10px white; /* Agrega sombra blanca */
+    border-radius: 30px;
+   
+
+}
+
+/* Enlace activo en el menú colapsable */
+.collapse .nav-link.pagAct {
+    color: #9c0000; /* Color especial para el enlace activo */
+   
+}
+
+/* Botón hamburguesa personalizado */
+.custom-toggler {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.custom-toggler .toggler-line {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.custom-toggler:hover .toggler-line {
+    background-color: #9c0000;
+}
+
+
+
 
 /*******************************************************************************Main*******************************************************************/
 main {
@@ -203,7 +263,7 @@ main {
     align-items: center;
     justify-content: flex-start; /* Alinear los elementos hacia la izquierda */
     gap: 20px;
-    margin: 10px auto;
+    margin: 20px auto;
     max-width: 1200px; 
     transition: transform 0.2s, box-shadow 0.2s; 
     overflow: hidden;
@@ -232,7 +292,7 @@ main {
     text-align: justify;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 40px;
-    width: 400px;
+    width: 500px;
 }
 
 .imagenCejas{
@@ -307,11 +367,11 @@ main {
     text-align: justify;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 35px;
-    width: 400px;
+    width: 500px;
 }
 
 .imagenMicropigmentacion{
-    width: 350px;
+    width: 450px;
     height: auto;
     flex-shrink: 0;
     border-radius: 8px;
@@ -335,11 +395,11 @@ main {
     text-align: justify;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 35px;
-    width: 400px;
+    width: 550px;
 }
 
 .imagenMaquillaje{
-    width: 450px;
+    width: 500px;
     height: auto;
     flex-shrink: 0;
     border-radius: 8px;
@@ -363,11 +423,11 @@ main {
     text-align: justify;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 40px;
-    width: 400px;
+    width: 550px;
 }
 
 .imagenCabello{
-    width: 350px;
+    width: 450px;
     height: auto;
     flex-shrink: 0;
     border-radius: 8px;
@@ -391,11 +451,11 @@ main {
     text-align: justify;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 23px;
-    width: 600px;
+    width: 500px;
 }
 
 .imagenUnias2{
-    width: 400px;
+    width: 300px;
     height: auto;
     flex-shrink: 0;
     border-radius: 8px;
@@ -405,8 +465,8 @@ main {
 }
 
 .videoUñas{
-    width: 350px;
-    height: 600px;
+    width: 250px;
+    height: auto;
     flex-shrink: 0;
     border-radius: 8px;
     margin-right: 60px; 
@@ -419,6 +479,19 @@ main {
     border-radius: 8px;
     margin-right: 40px; 
     animation: desplazamiento-continuo 40s linear infinite;
+}
+
+
+
+/* Asegura el diseño horizontal en pantallas grandes */
+@media (min-width: 992px) {
+    .navbar-nav {
+        flex-direction: row; /* Los enlaces se alinean horizontalmente */
+        gap: 10px; /* Espaciado entre enlaces */
+    }
+    nav a {
+        padding: 5px 15px; /* Ajusta el espacio para pantallas grandes */
+    }
 }
 
 /*animacion para imagenes adicionales*/
@@ -460,7 +533,7 @@ footer {
         max-width: 100%;
     }
 
-    h1 {
+    .caja1 h1{
         font-size: 1.8rem;
     }
 
@@ -505,12 +578,12 @@ footer {
     }
     
     .divPestañas{
-        font-size: 18px;
-        width: 400px;
+        font-size: 10px;
+        width: 200px;
     }
     
     .imagenPestañas{
-        width: 250px;
+        width: 550px;
         height: auto;
     }
     
