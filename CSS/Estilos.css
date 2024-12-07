@@ -171,9 +171,6 @@ header {
     background-color: #9c0000;
 }
 
-
-
-
 /*******************************************************************************Main*******************************************************************/
 main {
     display: flex;
@@ -554,7 +551,8 @@ footer {
     }
 
     .divCejas{
-        font-size: 18px;
+        font-size: 20px;
+        width: 300px;
     }
     
     .imagenCejas{
@@ -578,12 +576,12 @@ footer {
     }
     
     .divPestañas{
-        font-size: 10px;
-        width: 200px;
+        font-size: 18px;
+        width: 400px;
     }
     
     .imagenPestañas{
-        width: 550px;
+        width: 300px;
         height: auto;
     }
     
@@ -593,7 +591,8 @@ footer {
     }
     
     .divMicropigmentacion{
-        font-size: 18px;
+        font-size: 20px;
+        width: 400px;
     }
     
     .imagenMicropigmentacion{
@@ -608,6 +607,7 @@ footer {
     
     .divMaquillaje{
         font-size: 18px;
+        width: 400px;
     }
     
     .imagenMaquillaje{
@@ -621,7 +621,8 @@ footer {
     }
     
     .divcabello{
-        font-size: 18px;
+        font-size: 20px;
+        width: 400px;
     }
     
     .imagenCabello{
